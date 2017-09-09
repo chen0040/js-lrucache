@@ -38,9 +38,9 @@ console.log(cache2.get('b')); // display { value: 2 }
 Below are the Javascript code demo:
 
 ```Javascript
-var jslrucache = require('js-lrucache');
+var LRUCache = require('js-lrucache').default;
 
-let cache = new jslrucache.LRUCache(4); // max capacity is 4
+let cache = new LRUCache(4); // max capacity is 4
 cache.put('a', { value: 1 });
 cache.put('b', { value: 2 });
 cache.put('c', { value: 3 });
