@@ -1,6 +1,6 @@
 {
   "name": "js-lrucache",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Javascript implementation of least recently used cache",
   "author": "Xianshun Chen",
   "contributors": [
@@ -13,6 +13,7 @@
   },
   "scripts": {
     "test": "npm run compile && mocha --compilers js:babel-core/register",
+	"prepublish": "npm run compile",
     "compile": "./node_modules/.bin/babel --presets es2015,stage-0 -d build/ src/",
     "webpack": "./node_modules/.bin/webpack",
     "cover": "istanbul cover _mocha",
