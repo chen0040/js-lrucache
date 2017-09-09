@@ -6,7 +6,7 @@ module.exports = {
 		'./src/LRUCache.js'
 	 ],
      output: {
-         path: path.resolve(__dirname, 'dist'),
+         path: path.resolve(__dirname, 'webpack_build'),
          filename: 'lrucache.js'
      },
      module: {
