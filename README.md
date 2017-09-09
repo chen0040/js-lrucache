@@ -13,7 +13,7 @@ npm install js-lrucache
 # Usage
 
 ```Javascript
-import LRUCache from 'lrucache';
+import LRUCache from 'js-lrucache';
 
 let cache = new LRUCache(4); // max capacity is 4
 cache.put('a', { value: 1 });
@@ -30,5 +30,5 @@ console.log(cache.get('b')); // display { value: 2 }
 console.log(cache.get('c')); // display undefined as 'c' has been removed 
 
 let cache2 = cache.deepCopy();
-console.log(cache2.get('b')); display { value: 2 }
+console.log(cache2.get('b')); // display { value: 2 }
 ```
