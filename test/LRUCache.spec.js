@@ -1,4 +1,5 @@
-import LRUCache from './LRUCache';
+import LRUCache from '../dist/lrucache';
+import expect from 'expect';
 
 describe('LRUCache', () => {
    it('should delete least recently used item when items in cache is greater than its capacity', () => {

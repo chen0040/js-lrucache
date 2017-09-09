@@ -1,4 +1,5 @@
-import MinPQ from './MinPQ';
+import {MinPQ} from '../build/LRUCache';
+import expect from 'expect';
 
 describe('MinPQ', () => {
    it('should store items in descending order and return min item on delete', () => {
